@@ -1,0 +1,6 @@
+2023-01-06T17:56:22.790+05:30  INFO 18476 --- [restartedMain] .b.e.EmployeePayrollSpringAppApplication : Starting EmployeePayrollSpringAppApplication using Java 18.0.2.1 with PID 18476 (D:\CFP SpringBoot Assignments\EmployeePayrollSpringApp\target\classes started by romil in D:\CFP SpringBoot Assignments\EmployeePayrollSpringApp)
+2023-01-06T17:56:22.793+05:30 DEBUG 18476 --- [restartedMain] .b.e.EmployeePayrollSpringAppApplication : Running with Spring Boot v3.0.1, Spring v6.0.3
+2023-01-06T17:56:22.794+05:30  INFO 18476 --- [restartedMain] .b.e.EmployeePayrollSpringAppApplication : No active profile set, falling back to 1 default profile: "default"
+2023-01-06T17:56:26.262+05:30  WARN 18476 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-06T17:56:26.568+05:30  INFO 18476 --- [restartedMain] .b.e.EmployeePayrollSpringAppApplication : Started EmployeePayrollSpringAppApplication in 4.223 seconds (process running for 4.957)
+2023-01-06T17:56:26.572+05:30  INFO 18476 --- [restartedMain] .b.e.EmployeePayrollSpringAppApplication : Employee Payroll App Started
