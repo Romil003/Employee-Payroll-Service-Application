@@ -1,10 +1,7 @@
 package com.bridgelabz.employeepayrollspringapp.Model;
 
 import com.bridgelabz.employeepayrollspringapp.dto.EmployeePayrollDTO;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Data;
 
 import java.time.LocalDate;
@@ -16,13 +13,20 @@ public @Data class EmployeePayrollData {
 
     @Id
     @GeneratedValue
+    @Column(name = "employee_id")
     private int employeeId;
+
+    @Column(name = "name")
     private String name;
     private long salary;
     private String gender;
     private LocalDate startDate;
     private String note;
     private String profilePic;
+
+    @ElementCollection
+    @CollectionTable(name = "employees_department",joinColumns = @JoinColumn(name = "id"))
+    @Column(name = "department")
     private List<String> departments;
 
     public EmployeePayrollData() {}
